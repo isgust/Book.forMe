@@ -1,0 +1,48 @@
+body{
+    
+    margin: 0;
+    padding: 0;
+    height: 75vh;
+   
+}
+
+section{
+     display: flex; 
+     background-color: #f0f2f5;
+     height: 75vh;
+}
+.divEntrar .button{
+    width: 364px;
+    height: 48px;
+    margin: 0;
+}
+
+.divInput input{
+    width: 364px;
+    height: 52px;
+    margin-bottom:15px ;
+}
+
+.column{
+    text-align: center;
+}
+.columns{
+    box-shadow: 1px 1px 1px #74767b;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 25%;
+    right: 10%;
+    width: 396px;
+    height: 349px;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+
+.box1{
+    width: 60%;
+}
+footer{
+    text-align: center;
+}

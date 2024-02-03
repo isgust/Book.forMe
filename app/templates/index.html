@@ -5,28 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book.forMe</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
 </head>
 <body>
-    <img src="" alt="">
+    <!-- Adicione o caminho da imagem no atributo src ou remova a tag img se não for necessário -->
+<section>
+    <div class="box1">
+    <img src="/app/templates/Logo-Test.png" alt="Descrição da imagem"> 
     <h2>O Book.forMe é uma plataforma que ajuda a conectar pessoas interessadas em doar livros com aquelas que desejam receber exemplares de forma gratuita</h2>
-    <div>
-        <form action="">
-            <div>
-                <input type="text" placeholder="Email ou Nick">
-                <input type="text" placeholder="Senha">
+    </div>
+   
+    <div class="columns">
+        <form class="column" action="#">
+            <div class="divInput">
+                <input class="input" type="text" placeholder="Email ou Nick">
+                <input class="input" type="password" placeholder="Senha">
             </div>
-            <div>
-                <button class="button is-primary" type="submit">Entrar</button>
+            <div class="divEntrar">
+                <button class="button is-info" type="submit">Entrar</button>
             </div>
         </form>
-            <div>
-                <a href="">Esqueceu a senha?</a>
-            </div>
-            <br>
-            <div>
-                <button class="button is-primary">Criar nova conta</button>
-            </div>
+        <div class="column">
+            <!-- Adicione a URL correspondente no atributo href -->
+            <a href="#">Esqueceu a senha?</a>
+        </div>
+        <div class="column">
+            <!-- Adicione a URL correspondente no atributo href ou a ação correspondente -->
+            <button class="button is-primary" type="button" onclick="criarNovaConta()">Criar nova conta</button>
+        </div>
     </div>
+</section>
     <footer>
         <span>Book.forMe © 2024</span>
     </footer>
