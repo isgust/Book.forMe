@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,52 +9,60 @@
     <link rel="stylesheet" href="{{url_for('static', filename='footer.css')}}">
     <link rel="stylesheet" href="{{url_for('static', filename='index.css')}}">
 </head>
+
 <body>
     <section class="section has-background-light is-medium">
-        <div class="container">
-            <div class="columns is-fullwidth is-vcentered ml-6">
-                <div class="column is-5 ml-2">
-                    <figure class="image is-3by2">
-                        <img src="{{url_for('static', filename='img/logo.png')}}" alt="Descrição da imagem">
-                    </figure>
-                    <h2 class="subtitle is-three-fifths has-text-centered">
-                        <b>Book.forMe: Conectando doadores e receptores de livros gratuitamente.</b>
-                    </h2>
-                </div>
-                <div class="column is-6 mt-6 mr-2">
-                    <form action="#">
-                        <div class="field">
-                            <label class="label">Email ou Nick</label>
-                            <div class="control">
-                                <input class="input" type="text" placeholder="Email ou Nick">
+        <div class="video-container">
+            <video class="video-background" autoplay muted loop poster="video-poster.jpg">
+                <source src="{{url_for('static', filename='img/fundo.mp4')}}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="container">
+                <div class="columns is-fullwidth is-vcentered mb-2">
+                    <div class="column is-5">
+                        <figure class="image is-3by2">
+                            <img src="{{url_for('static', filename='img/logo.png')}}" alt="Descrição da imagem">
+                        </figure>
+                        <h2 class="subtitle is-three-fifths has-text-centered">
+                            <b>Book.forMe: Conectando doadores e receptores de livros gratuitamente.</b>
+                        </h2>
+                    </div>
+                    <div class="column is-6 mt-6 mr-2">
+                        <form action="#">
+                            <div class="field">
+                                <label class="label">Email ou Nick</label>
+                                <div class="control">
+                                    <input class="input" type="text" placeholder="Email ou Nick">
+                                </div>
                             </div>
-                        </div>
-                        <div class="field">
-                            <label class="label">Senha</label>
-                            <div class="control">
-                                <input class="input" type="password" placeholder="Senha">
+                            <div class="field">
+                                <label class="label">Senha</label>
+                                <div class="control">
+                                    <input class="input" type="password" placeholder="Senha">
+                                </div>
                             </div>
-                        </div>
-                        <div class="field is-grouped">
+                            <div class="field is-grouped">
                                 <button class="button is-info is-fullwidth" type="submit">Entrar</button>
+                            </div>
+                        </form>
+                        <div class="has-text-centered">
+                            <a href="#">Esqueceu a senha?</a>
                         </div>
-                    </form>
-                    <div class="has-text-centered">
-                        <a href="#">Esqueceu a senha?</a>
+                        <div class="has-text-centered mt-5">
+                            <button class="button is-primary" type="button" onclick="criarNovaConta()">Criar nova conta</button>
+                        </div>
                     </div>
-                    <div class="has-text-centered mt-5">
-                        <button class="button is-primary" type="button" onclick="criarNovaConta()">Criar nova conta</button>
-                    </div>
-                </div>                
+                </div>
             </div>
         </div>
     </section>
     <footer class="footer">
         <div class="content has-text-centered">
-            <p class="mt-6">
+            <p class="mt-4">
                 <strong>Book.forMe</strong> © 2024
             </p>
         </div>
     </footer>
 </body>
+
 </html>

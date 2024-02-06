@@ -1,3 +1,6 @@
 .footer{
-    height: 3vh;;
+    position: relative;
+    height: 1vh;
+    background-color: #F2F2F2; /* Cinza claro */
+    color: #000000; /* Preto */
 }

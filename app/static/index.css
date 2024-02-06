@@ -1,22 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&family=Roboto:ital,wght@1,700&display=swap');
 
-*{
+body, html {
     margin: 0;
     padding: 0;
+    height: 100%;
+
 }
 
-body{
+body {
     font-family: 'Roboto', sans-serif;
-    font-family: 'Roboto Mono', monospace;
     font-weight: bold;
+    color: #000000; /* Preto */
 }
 
-.column .is-two-fifths{
+.column .is-two-fifths {
     position: relative;
-    top: 100px;
+    top: 100px; /* Mantive seu ajuste de posição */
 }
 
-section{
-    height: 84vh;
+section {
+    height: 84%; /* Ajustei para 100% da altura */
     background-color: transparent;
+    position: relative; /* Adicionei posição relativa para o vídeo */
+}
+
+.video-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute; /* Posição absoluta para cobrir toda a seção */
+    top: 0;
+    left: 0;
+}
+
+
+.columns{
+    background-color: rgba(255, 255, 255, 0.5); /* Cor de fundo cinza com opacidade */
+    padding: 20px; /* Ajuste conforme necessário */
+    border-radius: 10px;
 }
